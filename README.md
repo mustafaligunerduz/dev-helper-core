@@ -1,33 +1,31 @@
 # 🧩 Dev Helper Core
 
-A lightweight plugin-based developer helper tool for detecting code issues and improving debugging workflow.
+A lightweight plugin-based tool for detecting code patterns and simple errors.
 
 ---
 
 ## 🚀 What is this?
 
-Dev Helper Core is a **plugin system for code analysis**.
+Dev Helper Core analyzes code using **plugins**.  
+It helps detect issues like undefined variables, debug patterns, and basic code structures.
 
-It allows developers to:
-- Detect simple code errors
-- Build custom plugins
-- Extend functionality easily
-
-No AI required — fully rule-based and extensible.
+No AI required — fully rule-based and extendable.
 
 ---
 
 ## ⚙️ Features
 
-- 🔌 Plugin-based architecture
-- 🧠 Code pattern detection
-- ⚡ Fast and lightweight
+- 🔌 Plugin system
+- ⚡ Fast code analysis
+- 🧠 Pattern-based detection
 - 🛠 Easy to extend
-- 📦 Simple integration
 
 ---
 
-## 📦 Installation
+## 📦 Usage
 
-```bash
-npm install dev-helper-core
+```js
+const { run } = require("./index");
+
+const result = run("console.log(a)");
+console.log(result);
